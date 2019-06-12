@@ -1,0 +1,17 @@
+
+Import-PfxCertificate -FilePath .\kv-dev-1-sfab-1-poc-servicefabric-20190611.pfx -CertStoreLocation Cert:\CurrentUser\My #-Password (ConvertTo-SecureString Password#1234 -AsPlainText -Force)
+
+
+#PS C:\mycertificates> Import-PfxCertificate -FilePath .\kv-dev-1-sfab-1-poc-servicefabric-20190611.pfx -CertStoreLocation Cert:\CurrentUser\My #-Password (ConvertTo-SecureString Password#1234 -AsPlainText -Force)
+
+
+#   PSParentPath: Microsoft.PowerShell.Security\Certificate::CurrentUser\My#
+
+#Thumbprint                                Subject                                                                                                                                                                                                                
+#----------                                -------                                                                                                                                                                                                                
+#F8AAB722064766622AD8791B80E55AE82EE697FC  CN=westeurope.cloudapp.azure.com                                                                                                                                                                                       
+
+
+
+#PS C:\mycertificates> 
+

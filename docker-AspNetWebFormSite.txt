@@ -1,0 +1,29 @@
+docker pull mcr.microsoft.com/dotnet/framework/runtime:4.7.2-windowsservercore-1803
+docker pull mcr.microsoft.com/dotnet/framework/aspnet:4.7.2-windowsservercore-1803
+
+
+
+cd\
+cd C:\Users\FJalali\source\repos\MyServiceFabrics\AspNetWebFormSite
+
+docker build -t farzadjalali/aspnetform:1803 .
+
+
+
+
+docker login # this one needs to be by powershell commandline
+docker push   farzadjalali/aspnetform:1803
+
+
+ 
+docker images
+
+# crwaprd1docker1.azurecr.io/aspnetwebformsite
+
+# run the image in your local docker
+docker run -it -p 8181:80  --rm farzadjalali/aspnetform:1803
+
+#open the below url in your browser
+
+http://localhost:8181/
+

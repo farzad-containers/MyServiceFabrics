@@ -1,0 +1,58 @@
+docker pull mcr.microsoft.com/dotnet/framework/runtime:4.7.2-windowsservercore-1803
+
+
+docker pull mcr.microsoft.com/dotnet/framework/aspnet:4.7.2-windowsservercore-1803
+
+
+
+
+
+Import-PfxCertificate -FilePath .\kv-dev-1-sfab-1-poc-servicefabric-20190611.pfx -CertStoreLocation Cert:\CurrentUser\My #-Password (ConvertTo-SecureString Password#1234 -AsPlainText -Force)
+
+
+#PS C:\mycertificates> Import-PfxCertificate -FilePath .\kv-dev-1-sfab-1-poc-servicefabric-20190611.pfx -CertStoreLocation Cert:\CurrentUser\My #-Password (ConvertTo-SecureString Password#1234 -AsPlainText -Force)
+
+
+#   PSParentPath: Microsoft.PowerShell.Security\Certificate::CurrentUser\My#
+
+#Thumbprint                                Subject                                                                                                                                                                                                                
+#----------                                -------                                                                                                                                                                                                                
+#F8AAB722064766622AD8791B80E55AE82EE697FC  CN=westeurope.cloudapp.azure.com                                                                                                                                                                                       
+
+
+
+#PS C:\mycertificates> 
+
+
+IIS docker images
+https://hub.docker.com/_/microsoft-windows-servercore-iis
+
+You can retrieve a list of all available tags for windows/servercore/iis at
+https://mcr.microsoft.com/v2/windows/servercore/iis/tags/list
+
+
+Containers on Windows Documentation
+https://docs.microsoft.com/en-us/virtualization/windowscontainers/index
+
+review and apply the below one with Hussayn:
+"Allow your application running in Azure to access the SQL DB" 
+https://docs.microsoft.com/en-us/azure/service-fabric/service-fabric-host-app-in-a-container
+
+LOAD BALANCER
+https://docs.microsoft.com/en-us/azure/load-balancer/quickstart-create-basic-load-balancer-portal
+
+port forwarding in load balancer (general)
+https://docs.microsoft.com/en-us/azure/load-balancer/tutorial-load-balancer-port-forwarding-portal
+
+
+
+Service fabric: create load balancer
+https://docs.microsoft.com/en-us/azure/service-fabric/create-load-balancer-rule
+
+Model an application in Service Fabric
+https://docs.microsoft.com/en-us/azure/service-fabric/service-fabric-application-model
+
+
+deploy tabric with CI/CD
+https://docs.microsoft.com/en-us/azure/service-fabric/service-fabric-tutorial-deploy-container-app-with-cicd-vsts
+
